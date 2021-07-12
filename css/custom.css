@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Qahiri&display=swap");
+:root {
+  scroll-behavior: smooth;
+}
+
+.navbar-brand {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
+.title {
+  font-weight: bolder;
+  color: #1266f1;
+}
+
+.covid-header {
+  margin-bottom: 2rem;
+}
+.covid-header .virus {
+  color: #1266f1;
+  font-size: 2rem;
+}
+.covid-header .c-case {
+  color: #1266f1;
+  font-weight: bold;
+}
+.covid-header .c-rec {
+  color: #00b74a;
+  font-weight: bold;
+}
+.covid-header .heal {
+  color: #00b74a;
+  font-size: 2rem;
+}
+.covid-header .c-de {
+  font-weight: bold;
+  color: #f93154;
+}
+.covid-header .death {
+  color: #f93154;
+  font-size: 2rem;
+}
+
+.date,
+.time {
+  text-align: right;
+  margin-bottom: 0;
+  font-weight: bold;
+}/*# sourceMappingURL=custom.css.map */
