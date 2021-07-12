@@ -49,7 +49,7 @@
                 <a class="nav-link" aria-current="page" href="#my-5">Regions</a>
               </li>
               <li class="nav-item li-three">
-                <a class="nav-link" aria-current="page" href="#contact">Contacts</a>
+                <a class="nav-link" aria-current="page" href="#contact">Reminders</a>
               </li>
               <li class="nav-item li-three">
                 <button type="button" class="btn btn-primary">Stop Asian Hate</button>
@@ -100,27 +100,66 @@
           </div>
         </section>
         <!--Section: Content-->
-
         <!--Section: Content-->
         <section class="text-center">
-          <h4 class="mb-5"><strong>Latest posts</strong></h4>
+          <h4 class="mb-5"><strong>Regions Covid Cases</strong></h4>
 
           <div class="row">
             <div class="col-lg-4 col-md-12 mb-4">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="img-fluid" />
+                  <iframe class="img-fluid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494271.98970255506!2d120.91608891336168!3d14.570566122450307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b6ef40705053%3A0x3d319345c846aeb6!2sManila%20Metropolitan%20Area!5e0!3m2!1sen!2sph!4v1626121461731!5m2!1sen!2sph"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Post title</h5>
+                  <h5 class="card-title">NATIONAL CAPITAL REGION</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
+                  <div class="cases">
+                    <i class="fas fa-viruses virus"></i>
+                    <span class="ncr-cases">asdasd</span>
+                    <p>Confirmed Cases</p>
+                  </div>
+                  <div class="recover">
+                    <i class="fas fa-virus-slash heal"></i>
+                    <span class="ncr-recoveries">asdasd</span>
+                    <p>Recoveries</p>
+                  </div>
+                  <div class="deaths">
+                    <i class="fas fa-skull-crossbones death"></i>
+                    <span class="ncr-deaths">asdasd</span>
+                    <p>Deaths</p>
+                  </div>
                   </p>
-                  <a href="#!" class="btn btn-primary">Read</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+                    NCR
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">ABOUT</h5>
+                          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">Metropolitan Manila, officially the National Capital Region, is the seat
+                          of government and one of
+                          three defined
+                          metropolitan areas in the Philippines</div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

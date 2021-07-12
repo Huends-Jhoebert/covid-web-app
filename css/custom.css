@@ -46,4 +46,25 @@
 .time {
   text-align: right;
   margin-bottom: 0;
+}
+
+.cases span,
+.cases i {
+  font-weight: bold;
+  color: #1266f1;
+  font-size: 1.3rem;
+}
+
+.recover span,
+.recover i {
+  font-weight: bold;
+  color: #00b74a;
+  font-size: 1.3rem;
+}
+
+.deaths span,
+.deaths i {
+  font-weight: bold;
+  color: #f93154;
+  font-size: 1.3rem;
 }/*# sourceMappingURL=custom.css.map */

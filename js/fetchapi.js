@@ -5,15 +5,16 @@ import { deaths } from "./main.js";
 import { dateOfUpdate } from "./main.js";
 import { timeOfUpdate } from "./main.js";
 import { tConvert } from "./function.js";
+import { ncrCases } from "./main.js";
+import { ncrRecoveries } from "./main.js";
+import { ncrDeaths } from "./main.js";
 
-export async function topCovidCases() {
+export async function covidCases() {
    try {
       const covidCases = await fetch("https://api.covid19api.com/summary");
       const respone = await covidCases.json();
       const phCases = await respone.Countries[136];
       const date = respone.Date.toString();
-
-      console.log(date);
 
       confirmedCases.textContent = `${numberWithCommas(
          phCases.TotalConfirmed
@@ -29,8 +30,28 @@ export async function topCovidCases() {
       // console.log(respone.data);
       // console.log(respone.last_update);
    } catch (err) {
-      //   todos.innerHTML = err;
+      prompt(err);
    }
 }
 
-// topCovidCases();
+// topregion with covid cases
+export async function topCovidCases() {
+   try {
+      const topRegion = await fetch(
+         "https://covid19-api-philippines.herokuapp.com/api/top-regions"
+      );
+
+      const topRegionData = await topRegion.json();
+
+      //   console.log(`${topRegionData.data[0].cases}`);
+
+      topRegionData.data.forEach((element) => {
+         if (element.region == "ncr") {
+            ncrCases.textContent = `${element.cases}`;
+            ncrRecoveries.textContent = `${element.recovered}`;
+            ncrDeaths.textContent = `${element.deaths}`;
+         }
+      });
+      console.log(topRegionData);
+   } catch (err) {}
+}

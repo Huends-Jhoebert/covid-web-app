@@ -18,5 +18,3 @@ export function tConvert(time) {
    }
    return time.join(""); // return adjusted time or original string
 }
-
-console.log(tConvert("17:26:59"));
