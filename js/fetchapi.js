@@ -8,9 +8,13 @@ import { tConvert } from "./function.js";
 import { ncrCases } from "./main.js";
 import { ncrRecoveries } from "./main.js";
 import { ncrDeaths } from "./main.js";
+import { loader } from "./main.js";
+import { openPage } from "./main.js";
 
 export async function covidCases() {
    try {
+      // document.body.style.display = "none";
+      // loader.style.display = "block";
       const covidCases = await fetch("https://api.covid19api.com/summary");
       const respone = await covidCases.json();
       const phCases = await respone.Countries[136];
@@ -24,11 +28,8 @@ export async function covidCases() {
       dateOfUpdate.textContent = `${date.slice(0, 10)}`;
 
       timeOfUpdate.textContent = `${tConvert(date.slice(11, 19))}`;
-
-      //   console.log(respone.data[0].deaths + respone.data[0].deaths);
-
-      // console.log(respone.data);
-      // console.log(respone.last_update);
+      loader.style.display = "none";
+      openPage();
    } catch (err) {
       prompt(err);
    }
