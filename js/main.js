@@ -18,7 +18,6 @@ covidCases();
 topCovidCases();
 
 //show pages after loading
-
 header.style.display = "none";
 main.style.display = "none";
 footer.style.display = "none";
