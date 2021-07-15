@@ -103,7 +103,7 @@
         <!--Section: Content-->
         <!--Section: Content-->
         <section class="text-center">
-          <h4 class="mb-5"><strong>Regions Covid Cases</strong></h4>
+          <h4 class="mb-5"><strong>TOP REGIONS</strong></h4>
 
           <div class="row">
             <div class="col-lg-4 col-md-12 mb-4">
@@ -130,7 +130,7 @@
                     <div class="col order-5">
                       <div class="deaths">
                         <i class="fas fa-skull-crossbones death"></i>
-                        <span class="ncr-deaths">asdasd</span>
+                        <span class="ncr-deaths" style="display: block;">asdasd</span>
                         <p>Deaths</p>
                       </div>
                     </div>
@@ -142,24 +142,30 @@
                       </span>
                     </div>
                   </div>
+
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
-                    NCR
+                  <button type="button" class="btn btn-info" data-mdb-toggle="modal" data-mdb-target="#ncrModal">
+                    More info
                   </button>
 
                   <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  <div class="modal fade" id="ncrModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">ABOUT</h5>
+                          <h5 class="modal-title" id="exampleModalLabel">QUICK FACTS</h5>
                           <!-- <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button> -->
                         </div>
-                        <div class="modal-body">Metropolitan Manila, officially the National Capital Region, is the seat
+                        <div class="modal-body">
+                          <img
+                            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHJaOphMVVwVFXUHvhCob-uUWLSPlERcj7bmC7FrG4zCSRH_dyjEIHWItBTXlC2EiQ6UEHv70JZnkpcO5aRMq6xQ"
+                            class="img-fluid pb-3" />
+                          Metropolitan Manila, officially the National Capital Region, is the seat
                           of government and one of
                           three defined
-                          metropolitan areas in the Philippines</div>
+                          metropolitan areas in the Philippines
+                        </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
                             Close
@@ -168,6 +174,7 @@
                       </div>
                     </div>
                   </div>
+                  <!-- modal !-->
                 </div>
               </div>
             </div>
@@ -175,18 +182,74 @@
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/023.jpg" class="img-fluid" />
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980489.0731441882!2d120.51762828774366!3d14.1864178198015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33980204fb63397d%3A0x35bd6f7be9cc92cc!2sCalabarzon!5e0!3m2!1sen!2sph!4v1626244612517!5m2!1sen!2sph"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    class="img-fluid"></iframe>
                   <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Post title</h5>
+                  <h5 class="card-title">REGION IV-A CALABARZON</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                  <a href="#!" class="btn btn-primary">Read</a>
+                  <div class="row">
+                    <div class="col">
+                      <div class="cases">
+                        <i class="fas fa-viruses virus"></i>
+                        <span class="calabarzon-cases">asdasd</span>
+                        <p>Confirmed Cases</p>
+                      </div>
+                    </div>
+                    <div class="col order-5">
+                      <div class="deaths">
+                        <i class="fas fa-skull-crossbones death"></i>
+                        <span class="calabarzon-deaths" style="display: block;">asdasd</span>
+                        <p>Deaths</p>
+                      </div>
+                    </div>
+                    <div class="col order-1">
+                      <span class="recover">
+                        <i class="fas fa-virus-slash heal"></i>
+                        <span class="calabarzon-recoveries">asdasd</span>
+                        <p>Recoveries</p>
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-info" data-mdb-toggle="modal" data-mdb-target="#calabarzonModal">
+                    more info
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="calabarzonModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">QUICK FACTS</h5>
+                          <!-- <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/AGUINALDO_SHRINE_2%2CKAWIT%2CCAVITE_%28cropped%29.jpg/1200px-AGUINALDO_SHRINE_2%2CKAWIT%2CCAVITE_%28cropped%29.jpg"
+                            class="img-fluid pb-3" />
+                          Calabarzon, formally known as the Southern Tagalog Mainland, is an
+                          administrative region in the Philippines, designated
+                          as Region IV-A. The region comprises five provinces: Batangas, Cavite, Laguna, Quezon, and
+                          Rizal and one highly
+                          urbanized city, Lucena
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal !-->
                 </div>
               </div>
             </div>
@@ -194,18 +257,74 @@
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/111.jpg" class="img-fluid" />
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938047.1595505187!2d117.75247158092732!3d15.444083020513458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33972fc30b864ae1%3A0xacda5d7d477e0834!2sCentral%20Luzon!5e0!3m2!1sen!2sph!4v1626246861502!5m2!1sen!2sph"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    class="img-fluid"></iframe>
                   <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Post title</h5>
+                  <h5 class="card-title">REGION III CENTRAL LUZON</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                  <a href="#!" class="btn btn-primary">Read</a>
+                  <div class="row">
+                    <div class="col">
+                      <div class="cases">
+                        <i class="fas fa-viruses virus"></i>
+                        <span class="central-luzon-cases" style="display: block;">asdasd</span>
+                        <p>Confirmed Cases</p>
+                      </div>
+                    </div>
+                    <div class="col order-5">
+                      <div class="deaths">
+                        <i class="fas fa-skull-crossbones death"></i>
+                        <span class="central-luzon-deaths" style="display: block;">asdasd</span>
+                        <p>Deaths</p>
+                      </div>
+                    </div>
+                    <div class="col order-1">
+                      <span class="recover">
+                        <i class="fas fa-virus-slash heal"></i>
+                        <span class="central-luzon-recoveries" style="display: block;">asdasd</span>
+                        <p>Recoveries</p>
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-info" data-mdb-toggle="modal"
+                    data-mdb-target="#centralLuzonModal">
+                    more info
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="centralLuzonModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">QUICK FACTS</h5>
+                          <!-- <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="https://lh5.googleusercontent.com/p/AF1QipPq6DWCzVv2qL_cL7ocu2aS-oHlnE0oZx3w1Kfy=w464-h260-n-k-no"
+                            class="img-fluid pb-3" />
+                          Central Luzon, designated as Region III, is an administrative region in the Philippines,
+                          primarily serving to organize
+                          the 7 provinces of the vast central plains of the island of Luzon, for administrative
+                          convenience.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal !-->
                 </div>
               </div>
             </div>
@@ -215,18 +334,74 @@
             <div class="col-lg-4 col-md-12 mb-4">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/002.jpg" class="img-fluid" />
+                  <iframe class="img-fluid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2009843.0445198705!2d122.51202764132414!3d10.303842614757546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33abc5f18ad5ce55%3A0x3b076c64269fa101!2sCentral%20Visayas!5e0!3m2!1sen!2sph!4v1626255753249!5m2!1sen!2sph"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Post title</h5>
+                  <h5 class="card-title">REGION VII CENTRAL VISAYAS</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                  <a href="#!" class="btn btn-primary">Read</a>
+                  <div class="row">
+                    <div class="col">
+                      <div class="cases">
+                        <i class="fas fa-viruses virus"></i>
+                        <span class="central-visayas-cases" style="display: block;">asdasd</span>
+                        <p>Confirmed Cases</p>
+                      </div>
+                    </div>
+                    <div class="col order-5">
+                      <div class="deaths">
+                        <i class="fas fa-skull-crossbones death"></i>
+                        <span class="central-visayas-deaths" style="display: block;">asdasd</span>
+                        <p>Deaths</p>
+                      </div>
+                    </div>
+                    <div class="col order-1">
+                      <span class="recover">
+                        <i class="fas fa-virus-slash heal"></i>
+                        <span class="central-visayas-recoveries" style="display: block;">asdasd</span>
+                        <p>Recoveries</p>
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-info" data-mdb-toggle="modal"
+                    data-mdb-target="#centralVisayasModal">
+                    more info
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="centralVisayasModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">QUICK FACTS</h5>
+                          <!-- <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRmpTsiaH5ve2Tl1IExBmEd44RDnoVXyaBnNchzuNWrDL5GnsvT3i4Gc5pSgeE_m4LKsz6ddCXhNuc9KBXyodC9wQ"
+                            class="img-fluid pb-3" />
+                          Central Visayas is an administrative region in the Philippines, numerically designated as
+                          Region VII. It consists of
+                          four provinces: and three highly urbanized cities: Cebu City, Lapu-Lapu, and Mandaue. Major
+                          islands are the eponymous
+                          Cebu, Bohol, and Siquijor, together with the eastern part of Negros.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal !-->
                 </div>
               </div>
             </div>
@@ -234,54 +409,215 @@
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/022.jpg" class="img-fluid" />
+                  <iframe class="img-fluid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2006503.636929531!2d121.30616034873094!3d10.814953531929495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ac1129550ddfd1%3A0x22c5da0b02814512!2sWestern%20Visayas!5e0!3m2!1sen!2sph!4v1626257070017!5m2!1sen!2sph"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Post title</h5>
+                  <h5 class="card-title">REGION VI WESTERN VISAYAS</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                  <a href="#!" class="btn btn-primary">Read</a>
+                  <div class="row">
+                    <div class="col">
+                      <div class="cases">
+                        <i class="fas fa-viruses virus"></i>
+                        <span class="western-visayas-cases" style="display: block;">asdasd</span>
+                        <p>Confirmed Cases</p>
+                      </div>
+                    </div>
+                    <div class="col order-5">
+                      <div class="deaths">
+                        <i class="fas fa-skull-crossbones death"></i>
+                        <span class="western-visayas-deaths" style="display: block;">asdasd</span>
+                        <p>Deaths</p>
+                      </div>
+                    </div>
+                    <div class="col order-1">
+                      <span class="recover">
+                        <i class="fas fa-virus-slash heal"></i>
+                        <span class="western-visayas-recoveries" style="display: block;">asdasd</span>
+                        <p>Recoveries</p>
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-info" data-mdb-toggle="modal"
+                    data-mdb-target="#westernVisayasModal">
+                    more info
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="westernVisayasModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">QUICK FACTS</h5>
+                          <!-- <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQtBh3YtW3X2pbpo5NWo4ebOCzAhNQxqndpgG43tV5oljSy8NLoY9HA-q7MShGUNVvw5TH9vFYJoR0xZKAihz42Eg"
+                            class="img-fluid pb-3" />
+                          Western Visayas is an administrative region in the Philippines, numerically designated as
+                          Region VI. It consists of six
+                          provinces and two highly urbanized cities. The regional center is Iloilo City. The region is
+                          dominated by the native
+                          speakers of four Visayan languages: Kinaray-a, Hiligaynon, Aklanon and Capiznon.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal !-->
                 </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/022.jpg" class="img-fluid" />
+                  <iframe class="img-fluid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028897.9947501658!2d124.73178937498231!3d6.685097118696539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f9897be541b433%3A0xf3e02b47a23772cc!2sDavao%20Region!5e0!3m2!1sen!2sph!4v1626258152810!5m2!1sen!2sph"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Post title</h5>
+                  <h5 class="card-title">REGION XI DAVAO REGION</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                  <a href="#!" class="btn btn-primary">Read</a>
+                  <div class="row">
+                    <div class="col">
+                      <div class="cases">
+                        <i class="fas fa-viruses virus"></i>
+                        <span class="davao-cases" style="display: block;">asdasd</span>
+                        <p>Confirmed Cases</p>
+                      </div>
+                    </div>
+                    <div class="col order-5">
+                      <div class="deaths">
+                        <i class="fas fa-skull-crossbones death"></i>
+                        <span class="davao-deaths" style="display: block;">asdasd</span>
+                        <p>Deaths</p>
+                      </div>
+                    </div>
+                    <div class="col order-1">
+                      <span class="recover">
+                        <i class="fas fa-virus-slash heal"></i>
+                        <span class="davao-recoveries" style="display: block;">asdasd</span>
+                        <p>Recoveries</p>
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-info" data-mdb-toggle="modal" data-mdb-target="#davaoModal">
+                    more info
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="davaoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">QUICK FACTS</h5>
+                          <!-- <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRs1FEoxx5SqxYSXP22zCmmbl5REBsI5V4j7bM0xD5CLHARPa21ukSd4eo3krHwa3TJAiYw78GnFeskEsIl_e9A6Q"
+                            class="img-fluid pb-3" />
+                          Davao Region, formerly called Southern Mindanao, is an administrative region in the
+                          Philippines, designated as Region
+                          XI. It is situated at the southeastern portion of Mindanao and comprises five provinces: Davao
+                          de Oro, Davao del Norte,
+                          Davao del Sur, Davao Oriental, and Davao Occidental.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal !-->
                 </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/022.jpg" class="img-fluid" />
+                  <iframe class="img-fluid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1949720.396577844!2d119.94650766594609!3d17.3614400172074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a16879def13f%3A0xd5964dfbd2444f2f!2sCordillera%20Administrative%20Region!5e0!3m2!1sen!2sph!4v1626259103851!5m2!1sen!2sph"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Post title</h5>
+                  <h5 class="card-title" style="text-transform: uppercase;">Cordillera Administrative Region</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                  <a href="#!" class="btn btn-primary">Read</a>
+                  <div class="row">
+                    <div class="col">
+                      <div class="cases">
+                        <i class="fas fa-viruses virus"></i>
+                        <span class="car-cases" style="display: block;">asdasd</span>
+                        <p>Confirmed Cases</p>
+                      </div>
+                    </div>
+                    <div class="col order-5">
+                      <div class="deaths">
+                        <i class="fas fa-skull-crossbones death"></i>
+                        <span class="car-deaths" style="display: block;">asdasd</span>
+                        <p>Deaths</p>
+                      </div>
+                    </div>
+                    <div class="col order-1">
+                      <span class="recover">
+                        <i class="fas fa-virus-slash heal"></i>
+                        <span class="car-recoveries" style="display: block;">asdasd</span>
+                        <p>Recoveries</p>
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-info" data-mdb-toggle="modal" data-mdb-target="#carModal">
+                    more info
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="carModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">QUICK FACTS</h5>
+                          <!-- <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4jb-pzQv1ywQ8bOxX8RTRjrEYmyKe1rkc3wvx43-JTEKJBYLAVbBK7UhO2z_cYUWHGwnnxx8i3urKmYTI9afbCw"
+                            class="img-fluid pb-3" />
+                          Cordillera Administrative Region, also known as Cordillera Region, is an administrative region
+                          in the Philippines,
+                          situated within the island of Luzon.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal !-->
                 </div>
               </div>
             </div>
@@ -289,17 +625,39 @@
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/022.jpg" class="img-fluid" />
+                  <iframe class="img-fluid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2003206.1719994377!2d123.86451393284212!3d11.29723488997996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3309dbfefc3c4b0d%3A0x56a106150786c25a!2sEastern%20Visayas!5e0!3m2!1sen!2sph!4v1626260130985!5m2!1sen!2sph"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Post title</h5>
+                  <h5 class="card-title" style="text-transform: uppercase;">REGION VIII ESTERN VISAYAS</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <div class="cases">
+                        <i class="fas fa-viruses virus"></i>
+                        <span class="estern-visayas-cases" style="display: block;">asdasd</span>
+                        <p>Confirmed Cases</p>
+                      </div>
+                    </div>
+                    <div class="col order-5">
+                      <div class="deaths">
+                        <i class="fas fa-skull-crossbones death"></i>
+                        <span class="estern-visayas-deaths" style="display: block;">asdasd</span>
+                        <p>Deaths</p>
+                      </div>
+                    </div>
+                    <div class="col order-1">
+                      <span class="recover">
+                        <i class="fas fa-virus-slash heal"></i>
+                        <span class="estern-visayas-recoveries" style="display: block;">asdasd</span>
+                        <p>Recoveries</p>
+                      </span>
+                    </div>
+                  </div>
                   <a href="#!" class="btn btn-primary">Read</a>
                 </div>
               </div>

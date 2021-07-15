@@ -1,15 +1,37 @@
-import { numberWithCommas } from "./function.js";
-import { confirmedCases } from "./main.js";
-import { recoveries } from "./main.js";
-import { deaths } from "./main.js";
-import { dateOfUpdate } from "./main.js";
-import { timeOfUpdate } from "./main.js";
-import { tConvert } from "./function.js";
-import { ncrCases } from "./main.js";
-import { ncrRecoveries } from "./main.js";
-import { ncrDeaths } from "./main.js";
-import { loader } from "./main.js";
-import { openPage } from "./main.js";
+import { numberWithCommas, tConvert } from "./function.js";
+import {
+   confirmedCases,
+   recoveries,
+   deaths,
+   dateOfUpdate,
+   timeOfUpdate,
+   ncrCases,
+   ncrRecoveries,
+   ncrDeaths,
+   loader,
+   openPage,
+   calabarzonCases,
+   calabarzonRecoveries,
+   calabarzonDeaths,
+   centralLuzonCases,
+   centralLuzonRecoveries,
+   centralLuzonDeaths,
+   centralVisayasCases,
+   centralVisayasRecoveries,
+   centralVisayasDeaths,
+   westernVisayasCases,
+   westernVisayasRecoveries,
+   westernVisayasDeaths,
+   davaoCases,
+   davaoDeaths,
+   davaoRecoveries,
+   carCases,
+   carDeaths,
+   carRecoveries,
+   esternVisayasCases,
+   esternVisayasRecoveries,
+   esternVisayasDeaths,
+} from "./main.js";
 
 export async function covidCases() {
    try {
@@ -51,8 +73,38 @@ export async function topCovidCases() {
             ncrCases.textContent = `${element.cases}`;
             ncrRecoveries.textContent = `${element.recovered}`;
             ncrDeaths.textContent = `${element.deaths}`;
+         } else if (element.region == "region iv-a: calabarzon") {
+            calabarzonCases.textContent = `${element.cases}`;
+            calabarzonRecoveries.textContent = `${element.recovered}`;
+            calabarzonDeaths.textContent = `${element.deaths}`;
+         } else if (element.region == "region iii: central luzon") {
+            centralLuzonCases.textContent = `${element.cases}`;
+            centralLuzonRecoveries.textContent = `${element.recovered}`;
+            centralLuzonDeaths.textContent = `${element.deaths}`;
+         } else if (element.region == "region vii: central visayas") {
+            centralVisayasCases.textContent = `${element.cases}`;
+            centralVisayasRecoveries.textContent = `${element.recovered}`;
+            centralVisayasDeaths.textContent = `${element.deaths}`;
+         } else if (element.region == "region vi: western visayas") {
+            westernVisayasCases.textContent = `${element.cases}`;
+            westernVisayasRecoveries.textContent = `${element.recovered}`;
+            westernVisayasDeaths.textContent = `${element.deaths}`;
+         } else if (element.region == "region xi: davao region") {
+            davaoCases.textContent = `${element.cases}`;
+            davaoRecoveries.textContent = `${element.recovered}`;
+            davaoDeaths.textContent = `${element.deaths}`;
+         } else if (element.region == "car") {
+            carCases.textContent = `${element.cases}`;
+            carRecoveries.textContent = `${element.recovered}`;
+            carDeaths.textContent = `${element.deaths}`;
+         } else if (element.region == "region viii: eastern visayas") {
+            esternVisayasCases.textContent = `${element.cases}`;
+            esternVisayasRecoveries.textContent = `${element.recovered}`;
+            esternVisayasDeaths.textContent = `${element.deaths}`;
          }
       });
       console.log(topRegionData);
-   } catch (err) {}
+   } catch (err) {
+      prompt(err);
+   }
 }
