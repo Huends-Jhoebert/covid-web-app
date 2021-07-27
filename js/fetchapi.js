@@ -31,6 +31,9 @@ import {
    esternVisayasCases,
    esternVisayasRecoveries,
    esternVisayasDeaths,
+   cagayanValleyCases,
+   cagayanValleyRecoveries,
+   cagayanValleyDeaths,
 } from "./main.js";
 
 export async function covidCases() {
@@ -101,6 +104,10 @@ export async function topCovidCases() {
             esternVisayasCases.textContent = `${element.cases}`;
             esternVisayasRecoveries.textContent = `${element.recovered}`;
             esternVisayasDeaths.textContent = `${element.deaths}`;
+         } else if (element.region == "region ii: cagayan valley") {
+            cagayanValleyCases.textContent = `${element.cases}`;
+            cagayanValleyRecoveries.textContent = `${element.recovered}`;
+            cagayanValleyDeaths.textContent = `${element.deaths}`;
          }
       });
       console.log(topRegionData);

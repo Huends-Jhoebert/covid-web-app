@@ -61,14 +61,20 @@ export var esternVisayasDeaths = document.querySelector(
    ".estern-visayas-deaths"
 ); //estern visayas number of recoveries
 
+export var cagayanValleyCases = document.querySelector(".cagayan-cases"); //cagayan valley number of cases
+export var cagayanValleyRecoveries = document.querySelector(
+   ".cagayan-recoveries"
+); //cagayan valley number of recoveries
+export var cagayanValleyDeaths = document.querySelector(".cagayan-deaths"); //cagayan number of recoveries
+
 covidCases();
 topCovidCases();
 
-//show pages after loading
+//when the page is not done of getting the data from api the display is non
 header.style.display = "none";
 main.style.display = "none";
 footer.style.display = "none";
-
+//show pages after loading
 export function openPage() {
    header.style.display = "block";
    main.style.display = "block";

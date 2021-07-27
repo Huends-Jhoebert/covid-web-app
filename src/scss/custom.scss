@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Qahiri&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Copse&family=Scope+One&display=swap");
+
 :root {
    scroll-behavior: smooth;
+}
+
+header,
+main,
+footer {
+   display: none;
 }
 
 .navbar-brand {
@@ -103,3 +112,11 @@
       transform: rotate(360deg);
    }
 }
+
+.qtation {
+   font-family: "Scope One", serif;
+}
+
+// .qtation-p {
+
+// }

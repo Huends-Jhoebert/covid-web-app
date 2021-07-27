@@ -96,14 +96,14 @@
               </div>
             </div>
             <p class="date h6">2021-07</p>
-            <p class="time">2021-07</p>
+            <p class="time text-muted">2021-07</p>
             <!-- Jumbotron -->
           </div>
         </section>
         <!--Section: Content-->
         <!--Section: Content-->
         <section class="text-center">
-          <h4 class="mb-5"><strong>TOP REGIONS</strong></h4>
+          <h4 class="mb-5 h2" style="letter-spacing: .3rem; text-align: center;"><strong>TOP REGIONS</strong></h4>
 
           <div class="row">
             <div class="col-lg-4 col-md-12 mb-4">
@@ -117,7 +117,7 @@
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">NATIONAL CAPITAL REGION</h5>
+                  <h5 class="card-title h6">NATIONAL CAPITAL REGION</h5>
                   <p class="card-text">
                   <div class="row">
                     <div class="col">
@@ -191,7 +191,7 @@
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">REGION IV-A CALABARZON</h5>
+                  <h5 class="card-title h6">REGION IV-A CALABARZON</h5>
                   <p class="card-text">
                   <div class="row">
                     <div class="col">
@@ -266,7 +266,7 @@
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">REGION III CENTRAL LUZON</h5>
+                  <h5 class="card-title h6">REGION III CENTRAL LUZON</h5>
                   <p class="card-text">
                   <div class="row">
                     <div class="col">
@@ -342,7 +342,7 @@
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">REGION VII CENTRAL VISAYAS</h5>
+                  <h5 class="card-title h6">REGION VII CENTRAL VISAYAS</h5>
                   <p class="card-text">
                   <div class="row">
                     <div class="col">
@@ -417,7 +417,7 @@
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title" id="wes-vis">REGION VI WESTERN VISAYAS</h5>
+                  <h5 class="card-title h6" id="wes-vis">REGION VI WESTERN VISAYAS</h5>
                   <p class="card-text">
                   <div class="row">
                     <div class="col">
@@ -490,7 +490,7 @@
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">REGION XI DAVAO REGION</h5>
+                  <h5 class="card-title h6">REGION XI DAVAO REGION</h5>
                   <p class="card-text">
                   <div class="row">
                     <div class="col">
@@ -562,7 +562,7 @@
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title" style="text-transform: uppercase;">Cordillera Administrative Region</h5>
+                  <h5 class="card-title h6" style="text-transform: uppercase;">Cordillera Adminis. Region</h5>
                   <p class="card-text">
                   <div class="row">
                     <div class="col">
@@ -633,7 +633,7 @@
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title" style="text-transform: uppercase;">REGION VIII ESTERN VISAYAS</h5>
+                  <h5 class="card-title h6" style="text-transform: uppercase;">REGION VIII ESTERN VISAYAS</h5>
                   <p class="card-text">
                   <div class="row">
                     <div class="col">
@@ -658,7 +658,38 @@
                       </span>
                     </div>
                   </div>
-                  <a href="#!" class="btn btn-primary">Read</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-info" data-mdb-toggle="modal"
+                    data-mdb-target="#easternVisayasModal">
+                    more info
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="easternVisayasModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">QUICK FACTS</h5>
+                          <!-- <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="https://lh5.googleusercontent.com/p/AF1QipNyNgKuTwyo9GqMn4AEn41quyQsyO1qouhcU7x4=w464-h260-n-k-no"
+                            class="img-fluid pb-3" />
+                          Eastern Visayas is an administrative region in the Philippines, designated as Region VIII. It
+                          consists of three main
+                          islands, Samar, Leyte and Biliran.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal !-->
                 </div>
               </div>
             </div>
@@ -666,18 +697,72 @@
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img src="https://mdbootstrap.com/img/new/standard/nature/035.jpg" class="img-fluid" />
+                  <iframe class="img-fluid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875928.6174942465!2d119.40033588716662!3d18.43437945131352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33858680e1c78c77%3A0xb1423d3f1106329c!2sCagayan%20Valley!5e0!3m2!1sen!2sph!4v1626454755066!5m2!1sen!2sph"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Post title</h5>
+                  <h5 class="card-title h6">REGION II CAGAYAN VALLEY</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                  <a href="#!" class="btn btn-primary">Read</a>
+                  <div class="row">
+                    <div class="col">
+                      <div class="cases">
+                        <i class="fas fa-viruses virus"></i>
+                        <span class="cagayan-cases" style="display: block;">asdasd</span>
+                        <p>Confirmed Cases</p>
+                      </div>
+                    </div>
+                    <div class="col order-5">
+                      <div class="deaths">
+                        <i class="fas fa-skull-crossbones death"></i>
+                        <span class="cagayan-deaths" style="display: block;">asdasd</span>
+                        <p>Deaths</p>
+                      </div>
+                    </div>
+                    <div class="col order-1">
+                      <span class="recover">
+                        <i class="fas fa-virus-slash heal"></i>
+                        <span class="cagayan-recoveries" style="display: block;">asdasd</span>
+                        <p>Recoveries</p>
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-info" data-mdb-toggle="modal" data-mdb-target="#cagayanModal">
+                    more info
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="cagayanModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">QUICK FACTS</h5>
+                          <!-- <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQ8R5prfvTl7Juo5UhATl9dcEr_ucKiAmTkQA3DofDSR5Qy7Eu23lE4azgbt73hC5tVDdGNmf3D8XcMBp10aA9blw"
+                            class="img-fluid pb-3" />
+                          Cagayan Valley, designated as Region II, is an administrative region in the Philippines,
+                          located in the northeastern
+                          section of Luzon Island. It is composed of five Philippine provinces: Batanes, Cagayan,
+                          Isabela, Nueva Vizcaya, and
+                          Quirino
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal !-->
                 </div>
               </div>
             </div>
@@ -686,7 +771,7 @@
         <!--Section: Content-->
 
         <!-- Pagination -->
-        <nav class="my-4" aria-label="...">
+        <!-- <nav class="my-4" aria-label="...">
           <ul class="pagination pagination-circle justify-content-center">
             <li class="page-item">
               <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
@@ -700,7 +785,61 @@
               <a class="page-link" href="#">Next</a>
             </li>
           </ul>
-        </nav>
+        </nav> -->
+
+        <h4 class="mb-5 display-1" style="letter-spacing: .3rem; text-align: center; margin-top: 2rem;">
+          <strong>REMAINDERS</strong>
+        </h4>
+
+        <!-- remainders -->
+        <!-- <div class="row">
+          <div class="col" style="text-align: center; font-size: 1.5rem;">
+            <span class="qtation h1">&ldquo;</span><span class="qtation-p">Clean your
+              hands daily.</span><span class="qtation h1">&rdquo;</span>
+          </div>
+          <div class="col">
+            <img
+              src="https://media.istockphoto.com/vectors/handwashing-illustration-vector-id1133178162?k=6&m=1133178162&s=612x612&w=0&h=Imb_K0MTXOpLs4lEMeG_B5sO2RK6exiYERZOI3ilmD0="
+              alt="wash-hand" class="">
+          </div>
+        </div> -->
+
+        <div class="row align-items-center justify-content-center">
+          <div class="col-sm col-md-6">
+            <p style="font-size: clamp(1rem, 5vw, 2.5rem); text-align: center; font-weight: bolder;"><span
+                class="qtation">&ldquo;</span><span class="qtation-p">Clean your
+                hands daily.</span><span class="qtation">&rdquo;</span></p>
+          </div>
+          <div class="col-sm col-md-6">
+            <img
+              src="https://media.istockphoto.com/vectors/handwashing-illustration-vector-id1133178162?k=6&m=1133178162&s=612x612&w=0&h=Imb_K0MTXOpLs4lEMeG_B5sO2RK6exiYERZOI3ilmD0="
+              alt="wash-hand" class="img-fluid">
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center mt-5">
+          <div class="col-sm col-md-6">
+            <p style="font-size: clamp(1rem, 5vw, 2.5rem); text-align: center; font-weight: bolder;"><span
+                class="qtation">&ldquo;</span><span class="qtation-p"> Practice Social Distancing.</span><span
+                class="qtation">&rdquo;</span></p>
+          </div>
+          <div class="col-sm col-md-6">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZ7YblYUh-_4kotasWd3uArkunaAxyYEx7A&usqp=CAU"
+              alt="social-distancing" class="img-fluid" style="width: 150%;">
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center mt-5">
+          <div class="col-sm col-md-6">
+            <p style="font-size: clamp(1rem, 5vw, 2.5rem); text-align: center; font-weight: bolder;"><span
+                class="qtation">&ldquo;</span><span class="qtation-p">Get Vaccinated.</span><span
+                class="qtation">&rdquo;</span></p>
+          </div>
+          <div class="col-sm col-md-6">
+            <img src="https://northernvirginiamag.com/wp-content/uploads/2021/03/vaccine.jpg" alt="vaccinated-img"
+              class="img-fluid" style="width: 150%;">
+          </div>
+        </div>
+
       </div>
     </main>
     <!--Main layout-->

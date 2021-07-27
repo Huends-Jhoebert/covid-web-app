@@ -4,6 +4,12 @@
   scroll-behavior: smooth;
 }
 
+header,
+main,
+footer {
+  display: none;
+}
+
 .navbar-brand {
   font-family: "Libre Baskerville", serif;
   font-weight: bold;
@@ -102,5 +108,4 @@
 }
 .qtation {
   font-family: "Scope One", serif;
-  font-size: 5rem;
 }/*# sourceMappingURL=custom.css.map */
