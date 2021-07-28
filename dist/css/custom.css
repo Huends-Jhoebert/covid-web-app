@@ -10,10 +10,15 @@ footer {
   display: none;
 }
 
-.navbar-brand {
+.navbar-brand,
+.footer-logo {
   font-family: "Libre Baskerville", serif;
   font-weight: bold;
   letter-spacing: 0.3rem;
+}
+
+.main {
+  margin-bottom: 25rem;
 }
 
 .title {

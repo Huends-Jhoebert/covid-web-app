@@ -12,11 +12,16 @@ footer {
    display: none;
 }
 
-.navbar-brand {
+.navbar-brand,
+.footer-logo {
    font-family: "Libre Baskerville", serif;
    font-weight: bold;
    //    font-family: "Qahiri", sans-serif;
    letter-spacing: 0.3rem;
+}
+
+.main {
+   margin-bottom: 25rem;
 }
 
 .title {
@@ -116,7 +121,3 @@ footer {
 .qtation {
    font-family: "Scope One", serif;
 }
-
-// .qtation-p {
-
-// }

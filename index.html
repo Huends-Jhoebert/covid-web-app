@@ -13,7 +13,7 @@
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Custom styles -->
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="./dist/css/custom.css" />
   </head>
 
   <body>
@@ -53,7 +53,7 @@
                 <a class="nav-link" aria-current="page" href="#contact">Reminders</a>
               </li>
               <li class="nav-item li-three">
-                <button type="button" class="btn btn-primary">Stop Asian Hate</button>
+                <button type="button" class="btn btn-success">Stop Asian Hate</button>
               </li>
             </ul>
 
@@ -787,9 +787,9 @@
           </ul>
         </nav> -->
 
-        <h4 class="mb-5 display-1" style="letter-spacing: .3rem; text-align: center; margin-top: 2rem;">
+        <!-- <h4 class="mb-5 display-6" style="letter-spacing: .3rem; text-align: center; margin-top: 2rem;">
           <strong>REMAINDERS</strong>
-        </h4>
+        </h4> -->
 
         <!-- remainders -->
         <!-- <div class="row">
@@ -810,10 +810,10 @@
                 class="qtation">&ldquo;</span><span class="qtation-p">Clean your
                 hands daily.</span><span class="qtation">&rdquo;</span></p>
           </div>
-          <div class="col-sm col-md-6">
+          <div class="col-sm col-md-6 hand-wrapper">
             <img
               src="https://media.istockphoto.com/vectors/handwashing-illustration-vector-id1133178162?k=6&m=1133178162&s=612x612&w=0&h=Imb_K0MTXOpLs4lEMeG_B5sO2RK6exiYERZOI3ilmD0="
-              alt="wash-hand" class="img-fluid">
+              alt="wash-hand" class="img-fluid hand-img hand-img-transistion">
           </div>
         </div>
         <div class="row align-items-center justify-content-center mt-5">
@@ -846,43 +846,31 @@
 
     <!--Footer-->
     <footer class="bg-light text-lg-start footer" id="contact">
-      <div class="py-4 text-center">
-        <a role="button" class="btn btn-primary btn-lg m-2"
-          href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow" target="_blank">
-          Learn Bootstrap 5
-        </a>
-        <a role="button" class="btn btn-primary btn-lg m-2" href="https://mdbootstrap.com/docs/standard/"
-          target="_blank">
-          Download MDB UI KIT
-        </a>
-      </div>
-
-      <hr class="m-0" />
 
       <div class="text-center py-4 align-items-center">
-        <p>Follow MDB on social media</p>
-        <a href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" class="btn btn-primary m-1" role="button"
-          rel="nofollow" target="_blank">
-          <i class="fab fa-youtube"></i>
+        <p>Powered By</p>
+        <a href="https://mdbootstrap.com/" class="btn btn-primary m-1" role="button" rel="nofollow" target="_blank">
+          <i class="fab fa-mdb"></i>
         </a>
-        <a href="https://www.facebook.com/mdbootstrap" class="btn btn-primary m-1" role="button" rel="nofollow"
-          target="_blank">
-          <i class="fab fa-facebook-f"></i>
+        <a href="https://covid19api.com/" class="btn btn-primary m-1" role="button" rel="nofollow" target="_blank">
+          API
         </a>
-        <a href="https://twitter.com/MDBootstrap" class="btn btn-primary m-1" role="button" rel="nofollow"
-          target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://github.com/mdbootstrap/mdb-ui-kit" class="btn btn-primary m-1" role="button" rel="nofollow"
-          target="_blank">
+        <a href="https://github.com/" class="btn btn-primary m-1" role="button" rel="nofollow" target="_blank">
           <i class="fab fa-github"></i>
+        </a>
+        <a href="#" class="btn btn-primary m-1" role="button" rel="nofollow" target="_blank">
+          <i class="fab fa-js-square"></i>
         </a>
       </div>
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        © 2021 Copyright:
+        <a class="text-dark footer-logo" target="_blank" href="#">
+          <span style="margin-top: -3px;">HuenDs</span>
+          <!-- <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="16" alt="" loading="lazy"
+                    style="margin-top: -3px;" /> -->
+        </a>
       </div>
       <!-- Copyright -->
     </footer>
@@ -891,6 +879,8 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!--fetching api -->
     <script type="module" src="js/main.js"></script>
+    <!-- animation js -->
+    <script src="js/animation.js"></script>
   </body>
 
 </html>
