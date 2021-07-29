@@ -1339,13 +1339,13 @@
   text-decoration: line-through !important;
 }
 
-/* rtl:begin:remove */
+/*!rtl:begin:remove*/
 .text-break {
   word-wrap: break-word !important;
   word-break: break-word !important;
 }
 
-/* rtl:end:remove */
+/*!rtl:end:remove*/
 .font-monospace {
   font-family: var(--bs-font-monospace) !important;
 }
@@ -4746,4 +4746,4 @@
   .d-print-none {
     display: none !important;
   }
-}/*# sourceMappingURL=bootstrap-utilities.css.map */
+}/*# sourceMappingURL=bootstrap-utilities.css.map */*/

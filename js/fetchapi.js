@@ -110,7 +110,6 @@ export async function topCovidCases() {
             cagayanValleyDeaths.textContent = `${element.deaths}`;
          }
       });
-      console.log(topRegionData);
    } catch (err) {
       prompt(err);
    }
