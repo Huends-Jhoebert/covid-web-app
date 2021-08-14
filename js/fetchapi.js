@@ -43,6 +43,7 @@ export async function covidCases() {
       const covidCases = await fetch("https://api.covid19api.com/summary");
       const respone = await covidCases.json();
       const phCases = await respone.Countries[136];
+      console.log(phCases);
       const date = respone.Date.toString();
 
       confirmedCases.textContent = `${numberWithCommas(
